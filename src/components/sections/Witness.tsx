@@ -176,6 +176,10 @@ export function Witness() {
         drawW = ch * imgRatio;
       }
 
+      const ZOOM_FACTOR = 1.35;
+      drawW *= ZOOM_FACTOR;
+      drawH *= ZOOM_FACTOR;
+
       if (window.innerWidth <= 768) {
         drawW *= 1.3;
         drawH *= 1.3;
